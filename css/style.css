@@ -98,10 +98,11 @@
 	margin:4px;
 	position: relative;
 }
-.list{position: relative;}
+.list{
+	position: relative;
+	}
 .list_li{
 	width: 100%;
-	/*height: 245px;*/
 }
 .li_image{
 	width:100%;
@@ -276,9 +277,15 @@
 .pric3 {
 	padding-left: 10px;
 }
-.contpric2 span{
-	margin: 8px 0 33px 0;
-	display: inline-block;
+.contpric2{
+	height: 40px;
+}
+.contpric2 .contpric_left{
+	float: left;
+}
+.contpric2 .contpric_right{
+	float: right;
+	text-align: right;
 }
 .prvd_color{
 	color:rgba(67,195,170,1);
@@ -668,7 +675,9 @@
 	text-align: center;
 	color: rgba(67,195,170,1);
 	height: 141px;
-	margin-bottom: 30px;
+	bottom: 0px;
+    position: absolute;
+	
 }
 .fenxinag p{
 	margin:27px 0 8px 0;
@@ -680,16 +689,16 @@
 }
 .fenxinag ul li{
 	width: 25%;
-	height: 64px;
+	height: 62px;
 	box-sizing:border-box;
 	background-repeat: no-repeat;
 	float: left;
-	background-size: 64px 64px;
+	background-size: 62px 62px;
 	background-position: center;
 }
 .fenxinag ul li img{
-	width: 64px;
-	height: 64px;
+	width: 62px;
+	height: 62px;
 }
 /*end_rated*/
 /*submit order*/
@@ -1018,7 +1027,7 @@
 	float: left;	
 }
 .contpric .contpric_right{
-	width: 70%;
+	width: 60%;
 	float: right;
 	text-align: right;
 }
@@ -1043,4 +1052,112 @@
 	font-size: 16px;
 	margin-top: 8px;	
 }
+.buy_btnshort{
+	color: rgba(255,255,255,1);
+	text-align: center;
+	width: 100%;
+	border-radius: 5px;
+	background-color: rgba(67,195,170,1);
+	border: none;
+	height: 45px;
+	line-height: 45px;
+	font-size: 16px;
+	margin-top: 8px;
+	float: right;	
+}
+.buy_short{
+	width: 100%;
+	height: 58px;
+	background-color: rgba(255,255,255,1);
+	position: fixed;
+	bottom:0px;
+}
+.prvd_header{
+	float: left;
+	width: 45px;
+	height: 45px;
+	border: 1px solid #ccc;
+	border-radius: 30px;
+	overflow: hidden;
+	background-image: url("../img/header_img.jpg");
+	background-size: 45px 45px;
+	margin-top:7px;
+	
+}
+.prvd_buycont{
+	float: left;
+	width: 95px;
+	height: 58px;
+	margin-left: 5px;
+}
+.prvd_buycont p{
+	font-size: 10px;
+    line-height: 0px;
+    padding: 20px 0 0px 0px;
+    text-align: center;
+    color: rgba(93,93,93,1);
+}
+.buy_shortcont{
+	width: 90%;
+	margin: 0px auto;
+}
+.prvd_buyrigt{
+	width: 130px;
+	float: right;
+}
+.fenxinag_line1{
+	font-size: 10px;
+	width: 100%;
+	text-align: left;
+	width: 90%;
+	margin: 0px auto;
+	color: rgba(93,93,93,1);
+	margin-top:14px;
+}
+.fenxinag_line2{
+	font-size: 14px;
+	width: 100%;
+	text-align: left;
+	width: 90%;
+	margin: 0px auto;
+	color: rgba(93,93,93,1);
+	margin-top:15px;
+	height: 30px;
+	line-height: 30px;
+}
+.fenxinag_line2 .fenxinag_box1{
+	float: left;
+	color: rgba(96,96,96,1);
+}
+.fenxinagtow p{
+	margin: 14px 0 8px 0;
+}
+.fenxinag_line2 .fenxinag_box2{
+	height: 28px;
+  	line-height: 28px;
+    border: 1px solid rgba(145,145,145,.4);
+    width: 159px;
+    display: block;
+    float: left;
+    border-radius: 8px;
+    margin-left: 10px;
+}
+.fenxinag_line2 span .fenxinag_text{
+	border: none;
+	padding-left: 2px;
+}
+.fenxinagtow{
+	height: 180px;
+}
+.menb{
+  position: fixed;
+  height: 100%;
+  width: 100%;
+  z-index: 999;
+  top: 0px;
+  background-color: rgba(0,0,0,.5);
+  left: 50%;
+  margin-left: -160px;
+}
 /*end_pro_dail*/
+
