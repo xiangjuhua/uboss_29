@@ -103,7 +103,7 @@
 .upass.main .container .list .list_li{
 	width: 47%;
 	background-color: rgba(255,255,255,1);
-	border: 1px solid rgba(204,204,204,.7);
+	border: 1px solid rgba(204,204,204,.5);
 	margin-bottom: 10px;
 	float: left;
 	box-sizing: border-box;
