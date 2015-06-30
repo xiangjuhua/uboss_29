@@ -267,6 +267,13 @@
 	line-height: 40px;
 	border-radius: 5px;
 }
+
+.oder_pcont {
+  display: block;
+  width: 116px;
+  text-align: center;
+  margin: 0px auto;
+}
 /*end_order*/
 
 /*pro_dail*/
@@ -1197,4 +1204,3 @@
   margin-left: -160px;
 }
 /*end_pro_dail*/
-
