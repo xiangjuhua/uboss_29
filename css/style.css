@@ -3,8 +3,9 @@
 	width: 100%;
 	margin: 0 auto;
 	overflow: hidden;
+	padding-bottom: 20px;
 }
-/*header begain*/
+/*header*/
 .upass.main .head{
 	position: fixed;
 	background-color: rgba(67,195,170,1);
@@ -51,37 +52,49 @@
 	background-size: 90px 20px;
 	background-position: center;
 }
-/*header over*/
+/*end_header*/
 
-/*middle begain*/
-.upass.main .container{
-	padding-top: 45px;
-	/*padding-bottom: 50px;*/
-}
-.upass.main .container .menu{
+/*menu*/
+.menu{
 	width: 300px;
-	height: 50px;
-	position: relative;
-	margin: 0 auto;
-	line-height: 50px;
-	text-align: center;
-}
-.upass.main .container .menu a{
-	color: rgba(70,193,173,1);
-	text-decoration: none;
-	margin-left: 7px;
-	margin-right: 7px;
-	padding-top: 5px;
-	padding-bottom: 5px;
+	margin:0px auto;
+	height: 45px;
+	line-height: 45px;	
 	font-size: 13px;
 }
-.upass.main .container .menu a{
-	display:inline-block;
+.menu ul li{
+	float:left;
+	width: 75px;
+	height: 45px;
+	line-height: 36px;
+	text-align: center;	
+} 
+.menu ul li a:hover{
+	height: 45px;
+	background:url(../img/select_hover.png);
+	background-size: 75px 45px;
+	line-height: 36px;
+	color: #fff;
+	display: block;
+} 
+.menu ul li a{
+	text-decoration: none;
+	color: rgba(67,195,170,1);	
 }
-.upass.main .container .menu a.btn.active{
-	color: rgba(255,254,255,1);	
-	background-image: url("../img/menu_hover.png");
-	background-size: 90px 20px;
+.menu ul li.active a{
+	width: 75px;
+	height: 45px;
+	background:url(../img/select_hover.png);
+	background-size: 75px 45px;
+	line-height: 36px;
+	color: #fff;
+	display: block;
+}
+/*end_menu*/
+
+/*middle*/
+.upass.main .container{
+	padding-top: 45px;
 }
 .upass.main .container .list{
 	width: 310px;
@@ -89,7 +102,6 @@
 }
 .upass.main .container .list .list_li{
 	width: 47%;
-	/*height: 199px;*/
 	background-color: rgba(255,255,255,1);
 	border: 1px solid rgba(204,204,204,.7);
 	margin-bottom: 10px;
@@ -145,12 +157,6 @@
   line-height: 19px;
   padding-left: 1px;
 }
-.posi_left ul .col_tow {
-  background-image: url("../img/com.png");
-  line-height: 19px;
-  padding-left: 1px;
-}
-
 .con_title {
   font-size: 13px;
   color: rgba(255,255,255,1);
@@ -178,7 +184,7 @@
 .pric {
   padding: 8px 0px 8px 0px;
 }
-/*middle over*/
+/*end_middle*/
 
 /*order*/
 .upass.main .head .bottom.iconleft{
@@ -198,6 +204,7 @@
 	line-height: 45px;
 	color: rgba(255,255,255,1);
 	font-size: 16px;
+	text-align: center;
 }
 .oder_imgsucess{
 	margin:0px auto;
@@ -260,6 +267,8 @@
 	line-height: 40px;
 	border-radius: 5px;
 }
+/*end_order*/
+
 /*pro_dail*/
 .shar{
 	height: 45px;
@@ -303,10 +312,14 @@
 	color:rgba(135,135,135,1);
 	font-size: 12px;
 }
+/*end_pro_dail*/
+
+
 /*Withdrawals*/
 .wd_box{
 	width: 90%;
 	margin: 0px auto;
+	margin-bottom: 20px;
 }
 .wd_box ul li{
 	margin-bottom: 12px;
@@ -318,6 +331,7 @@
 }
 .wd_sele{
 	margin-top: 40px;
+	position: relative;
 }
 .wd_box ul li p .wd_actnumeber{
 	width: 100%;
@@ -346,6 +360,15 @@
   width: 100%;
   padding: 16px 0px 9px 0px;
  }
+ .san{
+ 	position: absolute;
+ 	top: 42px;
+ 	right: 0px;
+ 	background-image: url("../img/san.png");
+ 	width: 17px;
+ 	height: 13px;
+ 	background-size: 17px 13px;
+ }
 /*end_Withdrawals*/
 
 /*my account_list*/
@@ -353,8 +376,8 @@
 	width: 100%;
 	height: 78px;
 	background-color: rgba(255,255,255,1);
-	border-bottom: 1px solid  rgba(186,186,185,.7);
-	border-top: 1px solid  rgba(186,186,185,.7);
+	border-bottom: 1px solid  rgba(186,186,185,.5);
+	border-top: 1px solid  rgba(186,186,185,.5);
 	margin-top: 11px;
 	line-height:78px;
 }
@@ -389,9 +412,10 @@
 	border: none;
 	color: rgba(255,255,255,1);
 	border-radius: 5px;
-	font-weight:bold;
 	text-align: center;
 	letter-spacing: 1px;
+	font-size: 12px;
+  	font-weight: normal;
 }
 .my_menu{
 	width: 94%;
@@ -416,10 +440,8 @@
 	background-repeat: no-repeat;
 	background-size: 100% 55px;
 	color: rgba(255,255,255,1);
-	display:block;
-	
+	display:block;	
 }
-
 .my_menu ul li.acticv a{
 	width: 100%;
 	height: 55px;
@@ -427,15 +449,13 @@
 	background-repeat: no-repeat;
 	background-size: 100% 55px;
 	color: rgba(255,255,255,1);
-	display:block;
-	
+	display:block;	
 }
-
 .my_boxlist{
 	width: 94%;
-	height: 91px;
+	height: 94px;
 	background-color: rgba(255,255,255,1);
-	height: 91px;
+	height: 94px;
 	border: 1px solid  rgba(186,186,185,.7);
 	margin:0px auto;
 	margin-bottom: 7px;	
@@ -469,8 +489,6 @@
 	float: right;
 	width: 75%;
 	position: relative;
-	/*border: 1px solid  #ccc;
-	height: 30px;*/
 }
 .my_boxlist dl dd .dd1{
 	width: 70%;
@@ -491,7 +509,6 @@
 	padding-right: 6px;
 	color:rgba(128,128,128,1);
 	font-size: 14px;
-
 }
 .my_dd2 p{
 	color:rgba(67,195,170,1);
@@ -507,21 +524,24 @@
 	width: 100%;
 	margin:0px auto;
 	background-color: rgba(255,255,255,1);
-	border-top: 1px solid  rgba(186,186,185,.7);
-	border-bottom: 1px solid  rgba(186,186,185,.7);
+	border-top: 1px solid  rgba(186,186,185,.5);
+	border-bottom: 1px solid  rgba(186,186,185,.5);
+	margin-bottom: 30px;
 }
 .accunt_adil_box1{
 	width: 90%;
 	margin:0px auto;
-	border-bottom: 1px solid rgba(67,195,170,1);
+	border-bottom: 1px solid rgba(67,195,170,.7);
 }
 .accunt_adil_box1 p{
 	margin: 17px 0 15px 0;
 	color: rgba(179,179,179,1);
+	font-size: 14px;
 }
 .accunt_adil_box1 strong{
-	font-size: 22px;
+	font-size: 32px;
 	color: rgba(67,195,170,1);
+	font-weight: normal;
 }
 .accunt_adil_box1 span{
 	font-size: 14px;
@@ -536,16 +556,21 @@
 .accunt_adil_box2 p{
 	margin: 17px 0 15px 0;
 	color: rgba(179,179,179,1);
+	font-size: 14px;
 }
 .accunt_adil_box2 strong{
-	font-size: 22px;
+	font-size: 32px;
 	color: rgba(67,195,170,1);
+	font-weight: normal;
 }
 .accunt_adil_box2 span{
-	font-size: 14px;
+	font-size: 12px;
 	color: rgba(67,195,170,1);
 	padding: 13px 0 21px 5px;
 	display:inline-block;
+}
+.accunt_adil_box3{
+	margin-bottom: 20px;
 }
 .accunt_adilbtn{
 	width: 100%;
@@ -560,6 +585,7 @@
 	font-size: 16px;
 }
 /*end_my account_dail*/
+
 /*receiving assessment*/
 .y_comment{
 	width: 90%;
@@ -670,14 +696,11 @@
 .fenxinag{
 	width: 100%;
 	background-color: rgba(255,255,255,1);
-	border-top: 1px solid  rgba(186,186,185,.7);
-	border-bottom: 1px solid  rgba(186,186,185,.7);
+	border-top: 1px solid  rgba(186,186,185,.5);
+	border-bottom: 1px solid  rgba(186,186,185,.5);
 	text-align: center;
 	color: rgba(67,195,170,1);
 	height: 141px;
-	bottom: 0px;
-    position: absolute;
-	
 }
 .fenxinag p{
 	margin:27px 0 8px 0;
@@ -701,6 +724,7 @@
 	height: 62px;
 }
 /*end_rated*/
+
 /*submit order*/
 .subOrd_box1{
 	width: 90%;
@@ -743,9 +767,7 @@
 	font-weight: normal;
 }
 .subOrd_box2{
-	/*background-color: rgba(255,255,255,1);*/
-	border-top: 1px solid  rgba(186,186,185,.7);
-	/*border-bottom: 1px solid  rgba(186,186,185,.7);*/
+	border-top: 1px solid  rgba(212,212,212,.5);
 }
 .subOrd_boxcont{
 	width: 100%;
@@ -789,22 +811,11 @@
 	float: left;
 }
 .sub_p2 .sub_left{
-  float: right;
-  display: block;
-  text-align: right;
-  width: 30%;
-  color: rgba(209,50,50,1);
-}
-.subOrd_boxcont span a.tow{
-  width: 52px;
-  height: 24px;
-  line-height: 24px;
-  border-radius: 5px;
-  border: 1px solid rgba(67,195,170,1);
-  text-align: center;
-  position: relative;
-  bottom: 4px;
-  left: 0px;	
+  	float: right;
+  	display: block;
+  	text-align: right;
+  	width: 30%;
+  	color: rgba(209,50,50,1);
 }
 .sub_left strong{
 	font-size: 11px;
@@ -829,11 +840,12 @@
 	color: rgba(212,212,212,1);
 	font-size: 12px;
 }
-
+.table3{
+	margin-top:8px;
+}
 .sub_yanzhen{
-	width: 67px;
 	height: 24px;
-	line-height: 24px;
+	line-height: 22px;
 	border: none;
 	float: right;
 	color: rgba(255,255,255,1);
@@ -843,7 +855,6 @@
 	margin-top: 5px;
 	display: inline-block;
 }
-
 .sub_yanzhcont{
 	width: 100%;
 	height: 32px;
@@ -857,17 +868,13 @@
 	width: 100%;
 	background-color: rgba(255,255,255,1);
 }
-
 .sub_box3_cont{
 	width: 90%;
 	margin:0px auto;
-	/*margin-bottom: 30px;*/
 	padding-top: 10px;
 }
 .sub_box3_cont1 table{
-	/*border:1px solid #ccc;*/
 	border-bottom: 1px dashed  rgba(186,186,185,.7);
-	margin-top:10px;
 }
 .sub_box3_cont1 table span{
 	color: rgba(67,195,170,1);
@@ -876,7 +883,6 @@
 .sub_box3_cont1 table .hidd{
 	color: rgba(79,79,79,1);
 	font-size: 11px;
-	line-height: 16px;
 }
 .sub_box3_cont1 table .mo{
 	display: block;
@@ -890,8 +896,11 @@
 	margin-right: 10px;
 	font-size: 11px;
 }
+.table1 tr{
+	height: 20px;
+	line-height: 14px;
+}
 .sub_box3_cont2{
-/*	height: 130px;*/
 	background-color: rgba(255,255,255,1);	
 }
 .sub_box3_cont2 table tr{
@@ -905,12 +914,11 @@
 	overflow: hidden;
 }
 .sub_over{
-	/*width: 40%;*/
 	overflow: hidden;
 	height: 20px;
 }
 .table2{
-	margin-top:10px;
+	margin-bottom:30px;
 }
 .sub_rado{
 	width: 30px;
@@ -931,7 +939,7 @@
 	height: 34px;
 	line-height: 34px;
 	margin: 0px auto;
-	margin-top: 8px;
+	margin-top: 6px;
 }
 .xiugai span{
 	display: inline-block;
@@ -965,7 +973,6 @@
 	height: 30px;
 	margin-top: 6px;
 }
-
 .zhifu{
 	width:100%;
 	height: 46px;
@@ -1059,8 +1066,8 @@
 	border-radius: 5px;
 	background-color: rgba(67,195,170,1);
 	border: none;
-	height: 45px;
-	line-height: 45px;
+	height: 43px;
+	line-height: 43px;
 	font-size: 16px;
 	margin-top: 8px;
 	float: right;	
@@ -1089,6 +1096,7 @@
 	width: 95px;
 	height: 58px;
 	margin-left: 5px;
+	overflow: hidden;
 }
 .prvd_buycont p{
 	font-size: 10px;
@@ -1128,15 +1136,47 @@
 .fenxinag_line2 .fenxinag_box1{
 	float: left;
 	color: rgba(96,96,96,1);
+	font-size: 16px;
 }
 .fenxinagtow p{
 	margin: 14px 0 8px 0;
+}
+.subOrd_boxcont span a.tow{
+  	width: 52px;
+  	height: 24px;
+  	line-height: 24px;
+  	border-radius: 5px;
+  	border: 1px solid rgba(67,195,170,1);
+  	text-align: center;
+  	position: relative;
+  	bottom: 4px;
+  	left: 0px;	
+}
+.tow_text{
+	width: 52px;
+  	height: 24px;
+  	line-height: 24px;
+  	border: none;
+}
+.fenxinagtow{
+	height: 180px;
+	padding-bottom: 10px;
+	bottom: 0px;
+    position: absolute;
+}
+.fenxinrated{
+	margin-bottom: 30px;
+}
+.posi_left ul .col_tow {
+  background-image: url("../img/com.png");
+  line-height: 19px;
+  padding-left: 1px;
 }
 .fenxinag_line2 .fenxinag_box2{
 	height: 28px;
   	line-height: 28px;
     border: 1px solid rgba(145,145,145,.4);
-    width: 159px;
+    width: 200px;
     display: block;
     float: left;
     border-radius: 8px;
@@ -1145,9 +1185,6 @@
 .fenxinag_line2 span .fenxinag_text{
 	border: none;
 	padding-left: 2px;
-}
-.fenxinagtow{
-	height: 180px;
 }
 .menb{
   position: fixed;
