@@ -4,6 +4,10 @@
 	margin: 0 auto;
 	overflow: hidden;
 	padding-bottom: 20px;
+	position: relative;
+}
+a{
+	text-decoration: none;
 }
 /*header*/
 .upass.main .head{
@@ -36,7 +40,7 @@
 }
 .upass.main .head .bottom.right{
 	right: 10px;
-	background-image: url("../img/admin.png");
+	background-image: url("../img/navbar.png");
 	background-size: 21px 22px;
 	background-repeat: no-repeat;
 	background-position: center;
@@ -52,6 +56,32 @@
 	background-size: 90px 20px;
 	background-position: center;
 }
+.nav_bar{
+	display: none;
+	}
+.nav_bar{
+	width: 100%;
+	background-color: rgba(17, 165, 136, .5);
+	text-align: right;
+	position: absolute;
+	top:45px;
+	right: 0px;
+}
+.nav_bar ul li{
+	height: 30px;
+	line-height: 30px;
+	padding-right: 10px;	
+}
+.nav_bar ul li:hover{
+	height: 30px;
+	line-height: 30px;
+	background-color: rgba(67,195,170,.8);
+	text-decoration:underline;
+}
+.nav_bar a{
+	color: rgba(255,255,255,1);
+}
+
 /*end_header*/
 
 /*menu*/
@@ -131,6 +161,7 @@
 .li_contentinteo{
 	width: 96%;
 	margin:0px auto;
+	overflow: hidden;
 	}
 .posi_left {
   position: absolute;
@@ -199,7 +230,7 @@
 	height: 45px;
 	position: absolute;
 	left:  50%;
-	margin-left: -32px;
+	margin-left: -45px;
 	background-position: center;
 	line-height: 45px;
 	color: rgba(255,255,255,1);
@@ -254,6 +285,7 @@
 	line-height: 40px;
 	border-radius: 5px;
 	margin-bottom: 10px;
+	display: block;
 }
 #oder_over{
 	width: 100%;
@@ -266,6 +298,7 @@
 	border: none;
 	line-height: 40px;
 	border-radius: 5px;
+	display: block;
 }
 
 .oder_pcont {
@@ -577,12 +610,12 @@
 	display:inline-block;
 }
 .accunt_adil_box3{
-	margin-bottom: 20px;
+	margin-bottom: 65px;
 }
 .accunt_adilbtn{
 	width: 100%;
-	height: 45px;
-	line-height: 45px;
+	height: 40px;
+	line-height: 40px;
 	color: rgba(255,255,255,1);
 	text-align: center;
 	background-color: rgba(67,195,170,1);
@@ -590,6 +623,7 @@
 	outline: none;
 	border-radius: 5px;
 	font-size: 16px;
+	display: block;
 }
 /*end_my account_dail*/
 
@@ -777,22 +811,24 @@
 	border-top: 1px solid  rgba(212,212,212,.5);
 }
 .subOrd_boxcont{
-	width: 100%;
 	margin:0px auto;
 	background-color: rgba(255,255,255,1);
+	width: 100%;
+	position: relative;
 }
 .subOrd_boxbtn{
-	margin-bottom: 10px;
-}
-.subOrd_boxcont p{
-	display: block;
-	height: 34px;
-	line-height: 34px;
-	width: 90%;
-	margin:0px auto;
+	margin-bottom: 34px;
 }
 .subOrd_boxcont .sub_p1{
-	border-bottom: 1px dashed  rgba(186,186,185,.7);
+	display: block;
+	height: 35px;
+	line-height: 35px;
+	margin:0px auto;
+	padding-left: 15px;
+	padding-right: 15px;
+}
+.subOrd_boxcont .sub_p1{
+	border-bottom: 1px solid rgba(204,204,204,.7);
 	color: rgba(139,139,139,1);
 	font-size: 12px;
 }
@@ -821,8 +857,13 @@
   	float: right;
   	display: block;
   	text-align: right;
-  	width: 30%;
+  	width: 30%rgba(255,255,255,1);rgba(67,195,170,1);;
   	color: rgba(209,50,50,1);
+  	position: absolute;
+  	right: 15px;
+}
+.sub_left{
+	font-size: 16px;
 }
 .sub_left strong{
 	font-size: 11px;
@@ -830,8 +871,8 @@
 }
 .sub_p3{
 	width: 100%;
-	height: 32px;
-	line-height: 32px;
+	height: 35px;
+	line-height: 35px;
 	text-align: center;
 	background-color:rgba(233,233,233,1);
 	font-size: 12px;
@@ -846,6 +887,7 @@
 	float: left;
 	color: rgba(212,212,212,1);
 	font-size: 12px;
+	margin-left: 15px;
 }
 .table3{
 	margin-top:8px;
@@ -861,15 +903,17 @@
 	font-size: 12px;
 	margin-top: 5px;
 	display: inline-block;
+	margin-right: 15px;
 }
 .sub_yanzhcont{
 	width: 100%;
 	height: 32px;
 	line-height: 32px;
 	border: none;
-	border-top: 1px dashed  rgba(186,186,185,.7);
+	border-top: 1px solid  rgba(204,204,204,.7);
 	color: rgba(212,212,212,1);
 	font-size: 12px;
+	padding-left: 15px;
 }
 .sub_box3{
 	width: 100%;
@@ -1004,6 +1048,24 @@
 .sub_num{
 	padding-right: 10px;
 }
+.addr_boxs {
+	background-color: rgba(255,255,255,1);
+	background-image: url("../img/btn_r.png");
+	background-position:300px;
+	background-repeat: no-repeat;
+	background-size: 7px 13px;
+}
+.addr{
+	display: block;
+	height: 52px;
+	line-height: 52px;
+	text-align: center;
+	font-size: 14px;
+	font-weight:normal;
+	color:rgba(67,195,170,1);
+	margin-bottom: 70px;
+	
+}
 /*end_submit order*/
 
 /*pro_dail*/
@@ -1064,7 +1126,8 @@
 	height: 43px;
 	line-height: 43px;
 	font-size: 16px;
-	margin-top: 8px;	
+	margin: 8px auto;
+	display: block;	
 }
 .buy_btnshort{
 	color: rgba(255,255,255,1);
@@ -1109,7 +1172,6 @@
 	font-size: 10px;
     line-height: 0px;
     padding: 20px 0 0px 0px;
-    text-align: center;
     color: rgba(93,93,93,1);
 }
 .buy_shortcont{
@@ -1148,16 +1210,29 @@
 .fenxinagtow p{
 	margin: 14px 0 8px 0;
 }
-.subOrd_boxcont span a.tow{
-  	width: 52px;
-  	height: 24px;
-  	line-height: 24px;
-  	border-radius: 5px;
+.sub_right a{
+	width: 26px;
+  	height: 21px;
+  	line-height: 21px;
+  	display: block;
   	border: 1px solid rgba(67,195,170,1);
   	text-align: center;
-  	position: relative;
-  	bottom: 4px;
-  	left: 0px;	
+  	float: right;
+  	margin-top:6px;
+}
+.sub_right a span{
+	color: rgba(67,195,170,1);
+}
+.sub_right a.tow{
+	color: rgba(131,131,131,1);
+	border-left: none;
+	border-right: none;
+}
+.sub_right a.jia{
+	border-radius: 0px 3px 3px 0;
+}
+.sub_right a.jian{
+	border-radius: 3px 0 0 3px;
 }
 .tow_text{
 	width: 52px;
@@ -1204,3 +1279,159 @@
   margin-left: -160px;
 }
 /*end_pro_dail*/
+/*address list*/
+.add_title{
+	height:41px;
+	line-height: 41px;
+	border-bottom: 1px solid rgba(204,204,204,1);
+	color: rgba(0,0,0,1);
+	position: relative;
+	text-align: center;
+}
+.close{
+	text-align: center;	
+	position: absolute;
+	top: 0px;
+	right: 10px;
+}
+.close img{
+	width: 17px;
+	height: 15px;
+}
+.add_line1{
+	border-bottom: 1px solid rgba(204,204,204,1);
+	color: rgba(0,0,0,1);
+	background-image: url("../img/adicon.png");
+	background-position: 15px 8px;
+	background-repeat: no-repeat;
+	background-size: 8px 13.5px;
+	padding: 0px 0px 4px 0px;
+	
+}
+.add_line1 dd{
+	text-align: left;
+	padding:6px 0px 3px 30px;
+	font-size: 13px;	
+}
+.add_line1 dd strong{
+	float: right;
+	font-weight: normal;
+	padding-right: 10px;
+}
+.add_more{
+	background-image: url("../img/up.png");
+	background-position: 223px center;
+	background-repeat: no-repeat;
+	background-size: 13px 7px;
+}
+.add_more a{
+	height: 41px;
+	line-height: 41px;
+	border-bottom: 1px solid rgba(204,204,204,1);
+	display: block;
+	color: rgba(0,0,0,1);
+	text-align: center;
+	font-size: 14px;
+}
+.add_new{
+	background-image: url("../img/right.png");
+	background-position: 300px center;
+	background-repeat: no-repeat;
+	background-size: 7px 13px;
+	position: relative;
+}
+.add_new img{
+	width: 11px;
+	height: 11px;
+	position: absolute;
+	left: 15px;
+  	top: 16px;
+}
+.add_new a{
+	height: 41px;
+	line-height: 41px;
+	display: block;
+	color: rgba(0,0,0,1);
+	text-align: left;
+  	padding-left: 30px;
+  	font-size: 14px;
+}
+.fenxinaadd{
+	height: 210px;
+	padding-bottom: 10px;
+	bottom: 0px;
+    position: absolute;
+}
+
+/*end_address list*/
+/*add_listall*/
+.add_listall{
+	background-color:rgba(255,255,255,1);
+	padding-bottom: 20px; 
+}
+.add_newbd{
+	border-bottom: 1px solid rgba(204,204,204,1);
+}
+.adbtn{
+	margin-top: 40px;
+}
+.add_inout p{
+	display: block;
+	height: 41px;
+	line-height: 41px;
+	padding-left: 15px;
+	border-bottom: 1px solid rgba(204,204,204,1);
+	font-size: 14px;
+}
+.add_inout .add_text{
+	margin-left: 15px;
+	width: 65%;
+	padding: 6px;
+	color: rgba(191,191,191,1);
+	border: none;
+}
+.add_textd{
+	margin-right: 16px;
+}
+.addrr{
+	position: relative;
+}
+.add_line2 img{
+	display: block;
+	width: 7px;
+	height: 13px;
+	position: absolute;
+	top: 18px;
+    right: 12px;
+}
+.addrr dd strong{
+	padding-right: 38px;
+}
+.accunt_addbtn{
+	width: 100%;
+	height: 40px;
+	line-height: 40px;
+	color: rgba(191,191,191,1);
+	text-align: center;
+	border: 1px solid rgba(191,191,191,1);
+	outline: none;
+	border-radius: 5px;
+	font-size: 16px;
+	display: block;
+	margin-top: 10px;
+}
+
+/*end_add_listall*/
+
+/*遮罩*/
+#tan_mask{
+	background:#000;
+	filter:alpha(opacity=50); /*IE滤镜，透明度50%*/
+	-moz-opacity:0.5; /*Firefox私有，透明度50%*/
+	opacity:0.5;/*其他，透明度50%*/
+	position:absolute;
+	left:0;
+	top:0;
+	z-index:1000;
+}
+/*遮罩结束*/	
