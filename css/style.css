@@ -1,4 +1,3 @@
-
 .upass.main{
 	width: 100%;
 	margin: 0 auto;
@@ -24,7 +23,7 @@ a{
 	height: 28px;
 	position: absolute;
 	border-radius: 50%;
-	top: 7px;
+	top: 8px;
 	line-height: 28px;
 	text-align: center;
 	overflow: hidden;
@@ -41,16 +40,28 @@ a{
 .upass.main .head .bottom.right{
 	right: 10px;
 	background-image: url("../img/navbar.png");
-	background-size: 21px 22px;
+	background-size: 21px 16px;
 	background-repeat: no-repeat;
 	background-position: center;
 }
-.upass.main .head .logo{
+/*.upass.main .head .logo{
 	width: 90px;
 	height: 45px;
 	position: absolute;
 	left:  50%;
 	margin-left: -32px;
+	background-image: url("../img/logo.png");
+	background-repeat: no-repeat;
+	background-size: 90px 20px;
+	background-position: center;
+}*/
+.upass.main .head .boss{
+	width: 100px;
+	height: 45px;
+	position: absolute;
+	left: 0px;
+	top: 0px;
+	margin-left: 10px;
 	background-image: url("../img/logo.png");
 	background-repeat: no-repeat;
 	background-size: 90px 20px;
@@ -61,8 +72,8 @@ a{
 	}
 .nav_bar{
 	width: 100%;
-	background-color: rgba(17, 165, 136, .5);
-	text-align: right;
+	background-color: rgba(10, 10, 10, .9);
+	text-align: left;
 	position: absolute;
 	top:45px;
 	right: 0px;
@@ -70,18 +81,15 @@ a{
 .nav_bar ul li{
 	height: 30px;
 	line-height: 30px;
-	padding-right: 10px;	
+	padding-left: 10px;	
 }
-.nav_bar ul li:hover{
-	height: 30px;
-	line-height: 30px;
-	background-color: rgba(67,195,170,.8);
-	text-decoration:underline;
-}
+
 .nav_bar a{
 	color: rgba(255,255,255,1);
 }
-
+.nav_bar a:hover{
+	color: rgba(67,195,170,1);
+}
 /*end_header*/
 
 /*menu*/
@@ -273,20 +281,6 @@ a{
 	width: 90%;
 	margin: 0px auto;
 }
-#oder_share{
-	width: 100%;
-	height: 40px;
-	background-color: rgba(67,195,170,1);
-	margin: 0px auto;
-	color: rgba(255,255,255,1); 
-	text-align: center;
-	font-size: 16px;
-	border: none;
-	line-height: 40px;
-	border-radius: 5px;
-	margin-bottom: 10px;
-	display: block;
-}
 #oder_over{
 	width: 100%;
 	height: 40px;
@@ -320,6 +314,20 @@ a{
 	background-size: 30px 24px;
 	display: block;
 	}
+#oder_share{
+	width: 100%;
+	height: 40px;
+	background-color: rgba(67,195,170,1);
+	margin: 0px auto;
+	color: rgba(255,255,255,1); 
+	text-align: center;
+	font-size: 16px;
+	border: none;
+	line-height: 40px;
+	border-radius: 5px;
+	margin-bottom: 10px;
+	display: block;
+}
 .contpric span{
 	margin:5px 0 0 0;
 	display: inline-block;
@@ -352,6 +360,143 @@ a{
 .prvd_colors{ 
 	color:rgba(135,135,135,1);
 	font-size: 12px;
+}
+.dail_head{
+	width: 100%;
+	margin: 0px auto;
+	height: 60px;
+	background-color: rgba(255,255,255,1); 
+}
+.dail_headbos{
+	width: 90%;
+	margin: 0px auto;
+	padding-top: 10px;
+}
+.dail_headbos dt{
+	width: 20%;
+	height: 60px;
+	float: left;
+}
+.dail_headbos dt img{
+	width: 43px;
+	height: 43px;
+	position: absolute;
+	z-index: 9;
+}
+.dail_headbos dd{
+	width: 80%;
+	height: 60px;
+	float: right;
+	font-size: 12px;
+	color:rgba(67,195,170,1);
+	line-height: 20px;
+	overflow: hidden;
+}
+.dail_cont{
+	width: 100%;
+	height:240px ;
+	background-image: url("../img/dailbg.png");
+	background-repeat: no-repeat;
+	background-position: center;
+	background-size: 320px 240px;
+}
+.momo{
+	color:rgba(67,195,170,1);
+	padding: 10px;
+}
+.sheng{
+	color: rgba(255,255,255,1);
+	text-align: center;
+	padding: 61px 0px 36px;
+    font-size: 12px;	
+}
+.sheng span{
+	font-size: 16px;
+}
+.dail_prol{
+	width: 90%;
+	margin: 0px auto;
+}
+.dail_prol strong{
+	font-size: 14px;
+	color:rgba(67,195,170,1);
+	font-weight: normal;
+}
+.dail_prol p{
+	font-size: 12px;
+	color:rgba(67,195,170,1);
+	line-height: 16px;
+}
+.dail_prol a{
+	color: #f00;
+}
+.dail_box{
+	background-color:rgba(255,255,255,1);
+	border-top: 1px solid  rgba(191,191,191,.7);
+	border-bottom: 1px solid  rgba(191,191,191,.7);
+	margin-bottom: 8px;
+}
+.dail_box .dail_title{
+	display: block;
+	padding: 10px 0px 0px 10px;
+	color:rgba(67,195,170,1);
+}
+.dail_box .dail_prics{
+	display: block;
+	padding: 10px;
+	border-bottom: 1px solid  rgba(191,191,191,.7);
+}
+.pricc{
+	color:rgba(67,195,170,1);
+	font-size: 12px;
+}
+.pric1v{
+	color:rgba(255,0,0,1);
+}
+.dail_pric3{
+	display: block;
+	padding: 10px 0px 22px 10px;
+	color:rgba(135,135,135,1);
+	font-size: 12px;
+}
+.pricc_v1{
+	float: left;
+}
+.pricc_v2{
+	float: right;
+}
+.comming_cont a{
+	color:rgba(0,0,0,1);
+	}
+.comming{
+	width: 100%;
+	height: 32px;
+	line-height: 32px;
+	background-color:rgba(255,255,255,1);
+	margin-bottom: 8px;
+	background-image: url("../img/right.png");
+	background-position: 305px;
+	background-repeat: no-repeat;
+	background-size: 7px 13px;
+}
+.comming_cont img{
+	width: 80px;
+	 height: 23px;
+	 padding: 5px 0px 0px 10px;
+}
+.comming_cont .comming_v1{
+	float: left;
+	}
+.comming_cont .comming_v2{
+	float: right;
+	padding-right: 30px;
+	}
+.prvid_content_tit{
+	display: block;
+	height: 32px;
+	line-height: 32px;
+	background-color:rgba(255,255,255,1);
+	  padding: 2px 10px;
 }
 /*end_pro_dail*/
 
@@ -696,7 +841,7 @@ a{
 	height: 100px;
 }
 .y_commentnox2 ul li:nth-child(2n+1){
-	background-image: url("../img/fav comment.png");
+	background-image: url("../img/fav_comment.png");
 	float: left;
 }
 .y_commentnox2 ul li:nth-child(2n+2){
@@ -1161,10 +1306,10 @@ a{
 	border-radius: 5px;
 	background-color: rgba(67,195,170,1);
 	border: none;
-	height: 43px;
-	line-height: 43px;
+	height: 40px;
+	line-height: 40px;
 	font-size: 16px;
-	margin-top: 8px;
+	margin-top: 10px;
 	float: right;	
 }
 .buy_short{
@@ -1183,29 +1328,40 @@ a{
 	overflow: hidden;
 	background-image: url("../img/header_img.jpg");
 	background-size: 45px 45px;
-	margin-top:7px;
-	
+	margin-top:7px;	
 }
 .prvd_buycont{
 	float: left;
 	width: 95px;
 	height: 58px;
-	margin-left: 5px;
 	overflow: hidden;
 }
+.prvd_buycont img{
+	width: 67px;
+	height: 11px;
+}
+.prvd_buy{
+	float: left;
+	width: 50px;
+	margin-left: 5px;
+	overflow: hidden;
+	font-size: 12px;
+	line-height: 62px;
+}
 .prvd_buycont p{
-	font-size: 10px;
     line-height: 0px;
-    padding: 20px 0 0px 0px;
+   padding: 14px 0px 0px 0px;
     color: rgba(93,93,93,1);
+    font-size: 12px;
 }
 .buy_shortcont{
 	width: 90%;
 	margin: 0px auto;
 }
 .prvd_buyrigt{
-	width: 130px;
+	width: 78px;
 	float: right;
+	text-align: center;
 }
 .fenxinag_line1{
 	font-size: 10px;
@@ -1271,7 +1427,6 @@ a{
 	bottom: 0px;
     position: absolute;
 }
-
 .posi_left ul .col_tow {
   background-image: url("../img/com.png");
   line-height: 19px;
@@ -1475,7 +1630,6 @@ a{
 	display: block;
 	margin-top: 10px;
 }
-
 /*end_add_listall*/
 /*alert*/
 .dlg {
@@ -1502,5 +1656,4 @@ a{
 	-webkit-animation: fadeInUp .7s ease 0s 1 backwards;
 	animation: fadeInUp .7s ease 0s 1 backwards;
 }
-
 /*end_alert*/
