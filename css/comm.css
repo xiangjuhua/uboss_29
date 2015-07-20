@@ -1,0 +1,26 @@
+.upass.main{
+	width: 100%;
+	margin: 0 auto;
+	overflow: hidden;
+	padding-bottom: 20px;
+	position: relative;
+}
+a{
+	text-decoration: none;
+}
+/*间隙层开始*/		
+.space_hx { /*横向间隙*/		
+	clear:both;		
+	width:100%;		
+	height:5px;		
+	font-size:1px;		
+	overflow:hidden;		
+}		
+.space_zx { /*纵向间隙*/		
+	float:left;		
+	width:10px;		
+	font-size:1px;		
+	overflow:hidden;		
+}		
+/*间隙层结束*/		
+	
